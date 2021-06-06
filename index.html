@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NPTEL-Workshop</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,800,900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      display: grid;
+      height: 100vh;
+      grid-template-columns: 0.7fr 1fr 1fr 1fr;
+      grid-template-rows: 0.3fr 0.1fr 2fr 0.4fr;
+      grid-template-areas:
+        "head head head head"
+        "main main main main"
+        "sidebar content content content"
+        "sidebar footer footer footer";
+      grid-gap: 0.2rem;
+
+    }
+
+    header {
+      background-color: rgb(163, 238, 238);
+      grid-area: head;
+      text-align: center;
+      color: blue;
+      font-size: xx-large;
+      font-weight: 300;
+    }
+
+    main {
+      background-color: aquamarine;
+      grid-area: main;
+    }
+
+    .content {
+      margin: 10px;
+      padding: 10px;
+      height: 100vh;
+      background-color: beige;
+      grid-area: content;
+    }
+
+    #sidebar {
+      padding: 10px;
+      padding: 0px 0px 0px 0px;
+      background-color: rgb(204, 130, 188);
+      grid-area: sidebar;
+      font-size: medium;
+
+    }
+
+    footer {
+      background-color: coral;
+      grid-area: footer;
+    }
+
+    @media only screen and (max-width: 550px) {
+      .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 1fr 2.2fr 1fr;
+        grid-template-areas:
+          "head"
+          "main"
+          "sidebar"
+          "content"
+          "footer";
+      }
+    }
+
+    .bottom-onehalf {
+      margin-bottom: 1.5cm;
+    }
+
+    .bottom-one {
+      margin-bottom: 1cm;
+    }
+
+    .bottom-two {
+      margin-bottom: 2cm;
+    }
+
+    /* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  background-color: rgb(133, 207, 236);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #000000;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: rgb(231, 231, 243);
+  color: rgb(2, 2, 2);
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #bed2df;
+  padding-left: 8px;
+  color: black;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  rotate: 90deg;
+  padding-right: 1px;
+}
+
+.arrow {
+  border: solid #0b0c0c;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  float: right;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <header>Welcome to NPTEL course on Microprocesors</header>
+  
+    <main>
+      main
+    </main>
+
+    <div id="sidebar">
+      <div class="sidenav">
+        <h2>Course contents:</h2>
+        
+        <button class="dropdown-btn">Course overview
+          <i class="arrow down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">Schedule</a>
+          <a href="#">Instructors</a>
+        </div>
+        
+        <button class="dropdown-btn">Lab handouts
+          <i class = "arrow down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">Lab1</a>
+          <a href="#">Lab2</a>
+        </div>
+  
+        <button class="dropdown-btn">Development tools
+          <i class = "arrow down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="tools.html">Keil u-Vision IDE</a>
+          <a href="flip.html">Flip</a>
+        </div>
+  
+        <button class="dropdown-btn">PT-51 board resources
+          <i class = "arrow down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="manual.html">User manual</a>
+          
+          <button class="dropdown-btn">Programming and Testing 
+            <i class = "arrow down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="hex.html">Running HEX file on PT-51</a>
+            <a href="testing.html">Testing of peripherals on PT-51</a>
+          </div>
+          
+          <a href="datasheet.html">AT89C5131A datasheet</a>
+          <a href="intrsuctions.html">8051 Instructions set</a>
+  
+        </div>
+  
+        <button class="dropdown-btn">Lecture notes
+          <i class = "arrow down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="intotomico.html">Introduction to microcontrollers</a>
+          <a href="interrupts.html">8051 Interrupts</a>
+          <a href="timers.html">8051 Timers</a>
+          <a href="serialIO.html">8051 Serial IO</a>
+          <a href="intelHex.html">Intel HEX format</a>
+        </div>
+     
+        <button class="dropdown-btn">FAQ
+          <i class = "fa fa-caret-dowm"></i>
+        </button>
+        <div class="dropdown-container">
+          
+        </div>
+  
+      </div>
+    </div>
+    
+
+    <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+      
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+        } else {
+        dropdownContent.style.display = "block";
+        }
+        });
+      }
+      </script>
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip</title>
+</head>
+
+<body>
+
+    <div class="section" id="flip">
+        <span id="flip-tool"></span>
+        <h2>FLIP<a class="headerlink" href="#flip" title="Permalink to this headline"></a></h2>
+        <p>Pt-51 board device driver installation instructions</p>
+        <iframe src="//www.slideshare.net/slideshow/embed_code/key/lPQWPiR58rvvem" width="595" height="485"
+            frameborder="0" marginwidth="0" marginheight="0" scrolling="no"
+            style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen>
+        </iframe>
+        <p>The pdf of the above slide deck is available <a class="reference download internal" download=""
+                href="docs/FLIP_and_Device_driver_installation.pdf"><code
+                    class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
+        <div class="line-block">
+            <div class="line"><br /></div>
+            <div class="line"><br /></div>
+        </div>
+        <div class="section" id="dfu-programmer-installation-and-use">
+            <h3>DFU Programmer Installation and Use<a class="headerlink" href="#dfu-programmer-installation-and-use"
+                    title="Permalink to this headline"></a></h3>
+            <ul class="simple">
+                <li>
+                    <dl class="simple">
+                        <dt>Installation steps for Linux</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <p>Run <code
+                                            class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">update</span> <span class="pre">-y</span></code>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Run <code
+                                            class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">-y</span> <span class="pre">dfu-programmer</span></code>
+                                    </p>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="simple">
+                        <dt>Installation steps for Mac</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <p>Press <code
+                                            class="docutils literal notranslate"><span class="pre">Command+Space</span></code>
+                                        and type <code
+                                            class="docutils literal notranslate"><span class="pre">Terminal</span></code>
+                                        and press <code
+                                            class="docutils literal notranslate"><span class="pre">enter/return</span></code>
+                                        key.</p>
+                                </li>
+                                <li>
+                                    <p>Run the following in the Terminal app: <code
+                                            class="docutils literal notranslate"><span class="pre">ruby</span> <span class="pre">-e</span> <span class="pre">&quot;$(curl</span> <span class="pre">-fsSL</span> <span class="pre">https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</span> <span class="pre">&lt;</span> <span class="pre">/dev/null</span> <span class="pre">2&gt;</span> <span class="pre">/dev/null</span></code>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>If the screen prompts you to enter a password, please enter your Mac’s user
+                                        password to continue. When you type the password, it won’t be displayed on
+                                        screen, but the system would accept it. So just type your password and press
+                                        <code
+                                            class="docutils literal notranslate"><span class="pre">enter/return</span></code>
+                                        key. Then wait for the command to finish.</p>
+                                </li>
+                                <li>
+                                    <p>Run: <code
+                                            class="docutils literal notranslate"><span class="pre">brew</span> <span class="pre">install</span> <span class="pre">dfu-programmer</span></code>
+                                    </p>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="simple">
+                        <dt>Use (common for Linux and Mac):</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <p>Run the following command for erasing flash: <code
+                                            class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">dfu-programmer</span> <span class="pre">at89c5131</span> <span class="pre">erase</span></code>.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Run the following command for programming flash: <code
+                                            class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">dfu-programmer</span> <span class="pre">at89c5131</span> <span class="pre">flash</span> <span class="pre">&lt;hex_file.hex&gt;</span></code>.
+                                        Make sure you are in the directory where your hexfile is present when you run
+                                        it.</p>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
