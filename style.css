@@ -1,0 +1,893 @@
+<style>
+ *{
+     margin: 0px;
+     padding: 0px;
+ }
+
+ @media(min-width:1200px)
+ {
+    #header{
+        height: 157px;
+    }
+    #header:after{content: ""; display: table; clear: both;} 
+    #wel-logo{
+        background-color: #332121; 
+        width:26%;
+        height: 100%;
+        float: left;
+    }
+    #heading{
+        background-color: #332121; 
+        width: 64%;
+        height: 100%;
+        float: left;
+        justify-content: center;
+        text-align: center;
+        font-size: 1rem;
+    }
+    #nptel-logo{
+        background-color: #332121; 
+        width: 10%;
+        height: 100%;
+        float: left;
+    }
+    #content{
+        height: 800px;
+        width: 100%;
+    }
+    #content:after{content: ""; display: table; clear: both;} 
+    #sidebar{
+        background-color: #b9a7a7;
+        width:25%;
+        height: 100%;
+        float: left;
+    }
+    #middle-content{
+        background-color: rgb(216, 208, 215);
+        width: 60%;
+        height: 100%;
+        float: left;
+    }
+    #discussion-forum{
+        background-color: rgb(194, 176, 241);
+        width: 15%;
+        height: 100%;
+        float: right;
+    }
+    #footer{
+        background-color: rgb(0, 0, 0);
+        height: 70px;
+    }
+    #wel{
+        width: 100%;
+        height: 100%;
+    }
+    #nptel{
+        width: 100%;
+        height: 100%;
+    }
+    #h1-id{
+        color: #fabd77;
+    }
+    #side-id, #disc-id{
+        margin-left: 7px;;
+    }
+    .sidenav 
+    {
+        height: 89%;
+        width: 100%;
+        z-index: 1;
+        background-color:  rgb(128, 9, 74);
+        overflow-x: hidden;
+        padding-top: 20px;
+        margin-top: auto;
+    }
+      
+      /* Style the sidenav links and the dropdown button */
+    .sidenav a, .dropdown-btn 
+    {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+    }
+      
+      /* On mouse-over */
+      .sidenav a:hover, .dropdown-btn:hover {
+        color: #000000;
+      }
+      
+      /* Main content */
+      .main {
+        margin-left: 200px; /* Same as the width of the sidenav */
+        font-size: 20px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+      }
+      
+      /* Add an active class to the active dropdown button */
+      .active {
+        background-color: rgb(231, 231, 243);
+        color: rgb(2, 2, 2);
+      }
+      
+      /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+      .dropdown-container {
+        display: none;
+        background-color: #bed2df;
+        padding-left: 8px;
+        color: black;
+      }
+      
+      /* Optional: Style the caret down icon */
+      .fa-caret-down {
+        float: right;
+        rotate: 90deg;
+        padding-right: 1px;
+      }
+      
+      .arrow {
+        border: solid #0b0c0c;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        float: right;
+      }
+      .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+
+      #footer-nav{
+        color: white;
+      }
+  
+      #footer-ul{
+        width:auto;
+        float: center;
+        margin-top: 0px;
+      }  
+  
+      #footer-li{
+        display: inline-block;
+        padding: 15px 30px;
+      }
+  
+      #footer-a{
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2vw;
+      }
+  
+      #footer-a:hover{
+        color:rgb(139, 139, 107);
+      }
+
+      input[type=text], select, textarea {
+        width: 100%;
+        height: 75%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: none;
+      }
+      
+      input[type=submit] {
+        background-color: #96a59f;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+
+      .container{
+          margin-top: 35px;
+      }
+      
+      table{
+        margin: 80px;
+      }
+      
+      th{
+        text-align: left;
+      }
+      
+      caption{
+        text-align: left;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      
+      table, th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      
+      th, td{
+        padding: 10px;
+      }
+      
+
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+}
+@media(min-width:992px) and (max-width:1199px){
+    #header{
+        height: 150px;
+    }
+    #header:after{content: ""; display: table; clear: both;} 
+    #wel-logo{
+        background-color: #332121; 
+        width:25%;
+        height: 100%;
+        float: left;
+    }
+    #heading{
+        background-color: #332121; 
+        width: 60%;
+        height: 100%;
+        float: left;
+        justify-content: center;
+        text-align: center;
+    }
+    #nptel-logo{
+        background-color: #332121; 
+        width: 15%;
+        height: 100%;
+        float: left;
+    }
+    #content{
+        height: 700px;
+        width: 100%;
+    }
+    #content:after{content: ""; display: table; clear: both;} 
+    #sidebar{
+        background-color:#917b7b; 
+        width:30%;
+        height: 100%;
+        float: left;
+    }
+    #middle-content{
+        background-color: rgb(216, 208, 215);
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+    #discussion-forum{
+        background-color: rgb(194, 176, 241);
+        width: 20%;
+        height: 100%;
+        float: right;
+    }
+    #footer{
+        background-color:rgb(0, 0, 0);
+        height: 50px;
+    }
+    #wel{
+        width: 100%;
+        height: 100%;
+    }
+    #nptel{
+        width: 100%;
+        height: 100%;
+    }
+    #h1-id{
+        color: #fabd77;
+    }
+    #side-id, #disc-id{
+        margin-left: 7px;;
+    }
+    .sidenav 
+    {
+        height: 87.5%;
+        width: 100%;
+        z-index: 1;
+        background-color: rgb(128, 9, 74);
+        overflow-x: hidden;
+        padding-top: 20px;
+        margin-top: auto;
+    }
+      
+      /* Style the sidenav links and the dropdown button */
+    .sidenav a, .dropdown-btn 
+    {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+    }
+      
+      /* On mouse-over */
+      .sidenav a:hover, .dropdown-btn:hover {
+        color: #000000;
+      }
+      
+      /* Main content */
+      .main {
+        margin-left: 200px; /* Same as the width of the sidenav */
+        font-size: 20px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+      }
+      
+      /* Add an active class to the active dropdown button */
+      .active {
+        background-color: rgb(231, 231, 243);
+        color: rgb(2, 2, 2);
+      }
+      
+      /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+      .dropdown-container {
+        display: none;
+        background-color: #bed2df;
+        padding-left: 8px;
+        color: black;
+      }
+      
+      /* Optional: Style the caret down icon */
+      .fa-caret-down {
+        float: right;
+        rotate: 90deg;
+        padding-right: 1px;
+      }
+      
+      .arrow {
+        border: solid #0b0c0c;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        float: right;
+      }
+      .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+
+      #footer-nav{
+        color: white;
+        
+      }
+  
+      #footer-ul{
+        width:auto;
+        float: center;
+        margin-top: 0px;
+      }  
+  
+      #footer-li{
+        display: inline-block;
+        padding: 15px 30px;
+      }
+  
+      #footer-a{
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2vw;
+      }
+  
+      #footer-a:hover{
+        color:rgb(139, 139, 107);
+      }
+
+      input[type=text], select, textarea {
+        width: 100%;
+        height: 75%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: no;
+      }
+      
+      input[type=submit] {
+        background-color: #96a59f;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      .container{
+        margin-top: 35px;
+     }
+
+      table{
+        margin: 80px;
+      }
+      
+      th{
+        text-align: left;
+      }
+      
+      caption{
+        text-align: left;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      
+      table, th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      
+      th, td{
+        padding: 10px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+}
+@media(min-width:768px) and (max-width:991px){
+    #header{
+        height: 400px;
+        
+    }
+    
+    #wel-logo{
+        background-color: #332121; 
+        width: 100%;
+        height: 42%;
+        
+    }
+    #heading{
+        background-color: #332121; 
+        width: 100%;
+        height: 17%;
+        justify-content: center;
+        text-align: center;
+        font-size: small;
+    }
+    #nptel-logo{
+        background-color: #332121; 
+        width: 100%;
+        height: 41%;
+    }
+    #content{
+        height: 1500px;
+        width: 100%;
+    }
+    #content:after{content: ""; display: table; clear: both;} 
+    #sidebar{
+        background-color: #917b7b; 
+        width:50%;
+        height: 50%;
+        float: left;
+    }
+    #middle-content{
+        background-color: rgb(216, 208, 215);
+        width: 100%;
+        height: 50%;
+        float: right;
+    }
+    #discussion-forum{
+        background-color: rgb(194, 176, 241);
+        width: 50%;
+        height: 50%;
+        float: right;
+    }
+    #footer{
+        background-color: rgb(0, 0, 0);
+        height: 50px;
+    }
+    #wel{
+        margin: auto;
+        display: block;
+    }
+    #nptel{
+        margin:auto;
+        display: block;
+    }
+    #h1-id{
+        color: #fabd77;
+        margin: 0px;
+    }
+    #side-id, #disc-id{
+        margin-left: 7px;;
+    }
+    .sidenav 
+    {
+        height: 89%;
+        width: 100%;
+        z-index: 1;
+        background-color: rgb(128, 9, 74);
+        overflow-x: hidden;
+        padding-top: 20px;
+        margin-top: auto;
+    }
+      
+      /* Style the sidenav links and the dropdown button */
+    .sidenav a, .dropdown-btn 
+    {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+    }
+      
+      /* On mouse-over */
+      .sidenav a:hover, .dropdown-btn:hover {
+        color: #000000;
+      }
+      
+      /* Main content */
+      .main {
+        margin-left: 200px; /* Same as the width of the sidenav */
+        font-size: 20px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+      }
+      
+      /* Add an active class to the active dropdown button */
+      .active {
+        background-color: rgb(231, 231, 243);
+        color: rgb(2, 2, 2);
+      }
+      
+      /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+      .dropdown-container {
+        display: none;
+        background-color: #bed2df;
+        padding-left: 8px;
+        color: black;
+      }
+      
+      /* Optional: Style the caret down icon */
+      .fa-caret-down {
+        float: right;
+        rotate: 90deg;
+        padding-right: 1px;
+      }
+      
+      .arrow {
+        border: solid #0b0c0c;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        float: right;
+      }
+      .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+
+      #footer-nav{
+        color: white;
+        
+      }
+  
+      #footer-ul{
+        width:auto;
+        float: center;
+        margin-top: 0px;
+      }  
+  
+      #footer-li{
+        display: inline-block;
+        padding: 15px 30px;
+      }
+  
+      #footer-a{
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2vw;
+      }
+  
+      #footer-a:hover{
+        color:rgb(139, 139, 107);
+      }
+
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      input[type=submit] {
+        background-color: #96a59f;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+
+      .container{
+          margin-top: 35px;
+      }
+
+      table{
+        margin: 80px;
+      }
+      
+      th{
+        text-align: left;
+      }
+      
+      caption{
+        text-align: left;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      
+      table, th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      
+      th, td{
+        padding: 10px;
+      }
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+}
+@media(max-width:767px){
+    #header{
+        height: 400px;
+    }
+    #header:after{content: ""; display: table; clear: both;} 
+    #wel-logo{
+        background-color:#332121;
+        width: 100%;
+        height: 36%;
+    }
+    #heading{
+        background-color: #332121;
+        width: 100%;
+        height: 24%;
+        justify-content: center;
+        text-align: center;
+        font-size:smaller;
+    }
+    #nptel-logo{
+        background-color: #332121; 
+        width: 100%;
+        height: 40%;
+    }
+    #content{
+        height: 1800px;
+        width: 100%;
+    }
+    #content:after{content: ""; display: table; clear: both;} 
+    #sidebar{
+        background-color: #917b7b;  
+        width:100%;
+        height: 34%;
+    }
+    #middle-content{
+        background-color:rgb(216, 208, 215);
+        width: 100%;
+        height: 40%;
+    }
+    #discussion-forum{
+        background-color:rgb(194, 176, 241);
+        width: 100%;
+        height: 26%
+    }
+    #footer{
+        background-color: rgb(0, 0, 0);
+        height: 50px;
+    }
+    #wel{
+        margin:auto;
+        display: block;
+    }
+    #nptel{
+        margin:auto;
+        display: block;
+    }
+    #h1-id{
+        color: #fabd77;
+        margin: 0px;
+    }
+    #side-id, #disc-id{
+        margin-left: 7px;
+        margin-top: 0px;
+    }
+    .sidenav 
+    {
+        height: 89%;
+        width: 100%;
+        z-index: 1;
+        background-color: rgb(128, 9, 74);
+        overflow-x: hidden;
+        padding-top: 20px;
+        margin-top: auto;
+    }
+      
+      /* Style the sidenav links and the dropdown button */
+    .sidenav a, .dropdown-btn 
+    {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+    }
+      
+      /* On mouse-over */
+      .sidenav a:hover, .dropdown-btn:hover {
+        color: #000000;
+      }
+      
+      /* Main content */
+      .main {
+        margin-left: 200px; /* Same as the width of the sidenav */
+        font-size: 20px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+      }
+      
+      /* Add an active class to the active dropdown button */
+      .active {
+        background-color: rgb(231, 231, 243);
+        color: rgb(2, 2, 2);
+      }
+      
+      /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+      .dropdown-container {
+        display: none;
+        background-color: #bed2df;
+        padding-left: 8px;
+        color: black;
+      }
+      
+      /* Optional: Style the caret down icon */
+      .fa-caret-down {
+        float: right;
+        rotate: 90deg;
+        padding-right: 1px;
+      }
+      
+      .arrow {
+        border: solid #0b0c0c;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        float: right;
+      }
+      .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+
+      #footer-nav{
+        color: white;
+        
+      }
+  
+      #footer-ul{
+        width:auto;
+        float: center;
+        margin-top: 0px;
+      }  
+  
+      #footer-li{
+        display: inline-block;
+        padding: 15px 30px;
+      }
+  
+      #footer-a{
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2vw;
+      }
+  
+      #footer-a:hover{
+        color:rgb(139, 139, 107);
+      }
+
+      input[type=text], select, textarea {
+        width: 100%;
+        height: 23px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: none;
+      }
+      
+      input[type=submit] {
+        background-color: #96a59f;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      .container{
+        margin-top: 35px;
+      }
+      table{
+        margin: 2px;
+      }
+      
+      th{
+        text-align: left;
+      }
+      
+      caption{
+        text-align: left;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      
+      table, th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      
+      th, td{
+        padding: 10px;
+      }
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+}
+</style>
