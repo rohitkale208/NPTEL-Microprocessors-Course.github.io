@@ -170,6 +170,11 @@
         color:rgb(139, 139, 107);
       }
 
+      #h2-id{
+        margin-top: 20px;
+        margin-left: 11px;
+      }
+
       input[type=text], select, textarea {
         width: 100%;
         height: 75%;
@@ -293,6 +298,12 @@
     #h1-id{
         color: #fabd77;
     }
+
+    #h2-id{
+      margin-top: 20px;
+      margin-left: 11px;
+    }
+
     #side-id, #disc-id{
         margin-left: 7px;;
     }
@@ -381,6 +392,11 @@
       #footer-li{
         display: inline-block;
         padding: 15px 30px;
+      }
+
+      #h2-id{
+        margin-top: 0px;
+        margin-left: 11px;
       }
   
       #footer-a{
@@ -617,6 +633,11 @@
         color:rgb(139, 139, 107);
       }
 
+      #h2-id{
+        margin-top: 20px;
+        margin-left: 11px;
+      }
+
       input[type=text], select, textarea {
         width: 100%;
         padding: 12px;
@@ -698,24 +719,24 @@
         height: 40%;
     }
     #content{
-        height: 2400px;
+        height: 3000px;
         width: 100%;
     }
     #content:after{content: ""; display: table; clear: both;} 
     #sidebar{
         background-color: rgb(216, 208, 215);;  
         width:100%;
-        height: 34%;
+        height: 20%;
     }
     #middle-content{
         background-color:rgb(216, 208, 215);
         width: 100%;
-        height: 40%;
+        height: 65%;
     }
     #discussion-forum{
         background-color:rgb(194, 176, 241);
         width: 100%;
-        height: 26%
+        height: 15%
     }
     #footer{
         background-color: rgb(0, 0, 0);
@@ -739,7 +760,6 @@
     }
     .sidenav 
     {
-        
         width: 100%;
         z-index: 1;
         background-color: rgb(128, 9, 74);
@@ -808,7 +828,10 @@
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
       }
-
+      #h2-id{
+        margin-top: 0px;
+        margin-left: 11px;
+      }
       #footer-nav{
         color: white;
         
@@ -866,7 +889,7 @@
         background-color: rgb(201, 215, 216);
       }
       table{
-        margin: 2px;
+        margin: 0px;
       }
       
       th{
@@ -885,7 +908,7 @@
       }
       
       th, td{
-        padding: 10px;
+        padding: 5px;
       }
       @media screen and (max-height: 450px) {
         .sidenav {padding-top: 15px;}
