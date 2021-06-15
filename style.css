@@ -32,7 +32,7 @@
         float: left;
     }
     #content{
-        height: 900px;
+        height: 1300px;
         width: 100%;
     }
     #content:after{content: ""; display: table; clear: both;} 
@@ -503,18 +503,21 @@
         width:50%;
         height: 50%;
         float: left;
+        overflow: scroll;
     }
     #middle-content{
         background-color: rgb(216, 208, 215);
         width: 100%;
         height: 50%;
         float: right;
+        overflow: scroll;
     }
     #discussion-forum{
         background-color: rgb(245, 179, 242);
         width: 50%;
         height: 50%;
         float: right;
+        overflow: scroll;
     }
     #footer{
         background-color: rgb(0, 0, 0);
@@ -727,11 +730,13 @@
         background-color: rgb(216, 208, 215);;  
         width:100%;
         height: 20%;
+        overflow: scroll;
     }
     #middle-content{
         background-color:rgb(216, 208, 215);
         width: 100%;
         height: 65%;
+        overflow: scroll;
     }
     #discussion-forum{
         background-color:rgb(194, 176, 241);
