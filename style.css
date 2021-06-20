@@ -37,19 +37,21 @@
     }
     #content:after{content: ""; display: table; clear: both;} 
     #sidebar{
-        background-color: rgb(199, 184, 197);
+        background-color: #725f5f;
         width:25%;
         height: 100%;
         float: left;
+        overflow: scroll;
     }
     #middle-content{
         background-color: rgb(216, 208, 215);
         width: 60%;
         height: 100%;
         float: left;
+        overflow: scroll;
     }
     #discussion-forum{
-        background-color: rgb(199, 184, 197);
+        background-color: #725f5f;
         width: 15%;
         height: 100%;
         float: right;
@@ -67,29 +69,35 @@
         height: 100%;
     }
     #h1-id{
-        color: #fabd77;
+      color: #fabd77;
+      margin-left: -116px;
+      padding-bottom: -43px;
+      margin-bottom: -14px;
+      margin-top: 26px;
+      font-family:Arial, Helvetica, sans-serif;
     }
     #side-id, #disc-id{
-        margin-left: 7px;;
+        margin-left: 7px;
+        color: #e9bf90;
+        font-family:Arial, Helvetica, sans-serif;
     }
     .sidenav 
     {
-        
         width: 100%;
         z-index: 1;
-        background-color:  rgb(128, 9, 74);
+        background-color:  #332121;
         overflow-x: hidden;
         padding-top: 20px;
         margin-top: auto;
     }
       
       /* Style the sidenav links and the dropdown button */
-    .sidenav a, .dropdown-btn 
+    .sidenav a
     {
         padding: 6px 8px 6px 16px;
         text-decoration: none;
         font-size: 20px;
-        color: #818181;
+        color: #c99253;
         display: block;
         border: none;
         background: none;
@@ -97,11 +105,30 @@
         text-align: left;
         cursor: pointer;
         outline: none;
+        border-bottom: dotted #3d3232;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    .dropdown-btn 
+    {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #c99253;
+        display: block;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+        border-bottom: dotted #3d3232;
+        
     }
       
       /* On mouse-over */
       .sidenav a:hover, .dropdown-btn:hover {
-        color: #000000;
+        color: #e78009;
       }
       
       /* Main content */
@@ -113,16 +140,16 @@
       
       /* Add an active class to the active dropdown button */
       .active {
-        background-color: rgb(231, 231, 243);
-        color: rgb(2, 2, 2);
+        background-color: #4d2626;
+        color: #e78009;
       }
       
       /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
       .dropdown-container {
         display: none;
-        background-color: #bed2df;
+        background-color: #201f1e;
         padding-left: 8px;
-        color: black;
+        color: #351f1f;
       }
       
       /* Optional: Style the caret down icon */
@@ -133,7 +160,7 @@
       }
       
       .arrow {
-        border: solid #0b0c0c;
+        border: solid #c99253;
         border-width: 0 3px 3px 0;
         display: inline-block;
         padding: 3px;
@@ -156,18 +183,21 @@
   
       #footer-li{
         display: inline-block;
-        padding: 15px 30px;
+        padding: 24px 76px;
+        border-left: solid #444341;
+        border-right: solid #444341;
       }
   
       #footer-a{
         text-align: center;
-        color: white;
+        color: #c99253;
         text-decoration: none;
-        font-size: 1.2vw;
+        font-size: 1vw;
+        font-family:Arial, Helvetica, sans-serif;
       }
   
       #footer-a:hover{
-        color:rgb(139, 139, 107);
+        color:#e78009;
       }
 
       #h2-id{
@@ -179,7 +209,7 @@
         width: 100%;
         height: 75%;
         padding: 12px;
-        border: 1px solid #ccc;
+        border: 1px solid #332121;
         border-radius: 4px;
         box-sizing: border-box;
         margin-top: 6px;
@@ -188,7 +218,7 @@
       }
       
       input[type=submit] {
-        background-color: #96a59f;
+        background-color: #332121;
         color: white;
         padding: 12px 20px;
         border: none;
@@ -198,12 +228,14 @@
       }
       
       input[type=submit]:hover {
-        background-color: #45a049;
+        background-color: #f1850a;
       }
 
       .container{
           margin-top: 20px;
-          background-color: rgb(201, 215, 216);
+          background-color: #daa56a;
+          color: #332121;
+          font-family:Arial, Helvetica, sans-serif;
       }
       
       table{
@@ -266,19 +298,21 @@
     }
     #content:after{content: ""; display: table; clear: both;} 
     #sidebar{
-        background-color:rgb(199, 184, 197); 
+        background-color:#725f5f;
         width:30%;
         height: 100%;
         float: left;
+        overflow: scroll;
     }
     #middle-content{
         background-color: rgb(216, 208, 215);
         width: 50%;
         height: 100%;
         float: left;
+        overflow: scroll;
     }
     #discussion-forum{
-        background-color: rgb(199, 184, 197);
+        background-color: #725f5f;
         width: 20%;
         height: 100%;
         float: right;
@@ -297,33 +331,48 @@
     }
     #h1-id{
         color: #fabd77;
+        margin-left: 10px;
+        padding-bottom: -43px;
+        margin-bottom: 3px;
+        margin-top: 18px;
+        font-family:Arial, Helvetica, sans-serif;
     }
 
     #h2-id{
       margin-top: 20px;
       margin-left: 11px;
     }
-
+    #h1-id{
+      color: #fabd77;
+      margin-left: -116px;
+      padding-bottom: -43px;
+      margin-bottom: -14px;
+      margin-top: 26px;
+      font-family:Arial, Helvetica, sans-serif;
+    }
     #side-id, #disc-id{
-        margin-left: 7px;;
+      margin-left: 7px;
+      margin-top: 0px;
+      color: #e9bf90;
+      font-family:Arial, Helvetica, sans-serif;
     }
     .sidenav 
     {
         width: 100%;
         z-index: 1;
-        background-color: rgb(128, 9, 74);
+        background-color:  #332121;
         overflow-x: hidden;
         padding-top: 20px;
         margin-top: auto;
     }
       
       /* Style the sidenav links and the dropdown button */
-    .sidenav a, .dropdown-btn 
+    .sidenav a
     {
         padding: 6px 8px 6px 16px;
         text-decoration: none;
         font-size: 20px;
-        color: #818181;
+        color: #c99253;
         display: block;
         border: none;
         background: none;
@@ -331,11 +380,29 @@
         text-align: left;
         cursor: pointer;
         outline: none;
+        border-bottom: dotted #3d3232;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    .dropdown-btn 
+    {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #c99253;
+        display: block;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+        border-bottom: dotted #3d3232;   
     }
       
       /* On mouse-over */
       .sidenav a:hover, .dropdown-btn:hover {
-        color: #000000;
+        color: #e78009;
       }
       
       /* Main content */
@@ -347,40 +414,36 @@
       
       /* Add an active class to the active dropdown button */
       .active {
-        background-color: rgb(231, 231, 243);
-        color: rgb(2, 2, 2);
+        background-color: #4d2626;
+        color: #e78009;
       }
       
       /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
       .dropdown-container {
         display: none;
-        background-color: #bed2df;
+        background-color: #201f1e;
         padding-left: 8px;
-        color: black;
+        color: #351f1f;
       }
-      
       /* Optional: Style the caret down icon */
       .fa-caret-down {
         float: right;
         rotate: 90deg;
         padding-right: 1px;
       }
-      
       .arrow {
-        border: solid #0b0c0c;
+        border: solid #c99253;
         border-width: 0 3px 3px 0;
         display: inline-block;
         padding: 3px;
         float: right;
-      }
+      }   
       .down {
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
       }
-
       #footer-nav{
         color: white;
-        
       }
   
       #footer-ul{
@@ -392,38 +455,38 @@
       #footer-li{
         display: inline-block;
         padding: 15px 30px;
-      }
-
-      #h2-id{
-        margin-top: 0px;
-        margin-left: 11px;
+        border-left: solid #444341;
+        border-right: solid #444341;
       }
   
       #footer-a{
         text-align: center;
-        color: white;
+        color: #c99253;
         text-decoration: none;
         font-size: 1.2vw;
+        font-family:Arial, Helvetica, sans-serif;
       }
   
       #footer-a:hover{
-        color:rgb(139, 139, 107);
+        color:#e78009;
       }
-
+      #h2-id{
+        margin-top: 0px;
+        margin-left: 11px;
+      }
       input[type=text], select, textarea {
         width: 100%;
         height: 75%;
         padding: 12px;
-        border: 1px solid #ccc;
+        border: 1px solid #332121;;
         border-radius: 4px;
         box-sizing: border-box;
         margin-top: 6px;
         margin-bottom: 16px;
-        resize: no;
+        resize: none;
       }
-      
       input[type=submit] {
-        background-color: #96a59f;
+        background-color: #332121;;
         color: white;
         padding: 12px 20px;
         border: none;
@@ -431,15 +494,17 @@
         cursor: pointer;
         width: 100%
       }
-      
+
       input[type=submit]:hover {
-        background-color: #45a049;
-      }
-      .container{
-        margin-top: 20px;
-        background-color: rgb(201, 215, 216);
+        background-color: #f1850a;
       }
 
+      .container{
+          margin-top: 20px;
+          background-color: #daa56a;
+          color: #332121;
+          font-family:Arial, Helvetica, sans-serif;
+      }
       table{
         margin: 80px;
       }
@@ -470,8 +535,7 @@
 }
 @media(min-width:768px) and (max-width:991px){
     #header{
-        height: 400px;
-        
+        height: 400px;   
     }
     
     #wel-logo{
@@ -499,7 +563,7 @@
     }
     #content:after{content: ""; display: table; clear: both;} 
     #sidebar{
-        background-color: rgb(157, 215, 233);
+        background-color: #725f5f;
         width:50%;
         height: 50%;
         float: left;
@@ -513,7 +577,7 @@
         overflow: scroll;
     }
     #discussion-forum{
-        background-color: rgb(245, 179, 242);
+        background-color: #725f5f;
         width: 50%;
         height: 50%;
         float: right;
@@ -532,17 +596,24 @@
         display: block;
     }
     #h1-id{
-        color: #fabd77;
-        margin: 0px;
+      color: #fabd77;
+      margin-left: 10px;
+      padding-bottom: -43px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+      font-family:Arial, Helvetica, sans-serif;
     }
     #side-id, #disc-id{
-        margin-left: 7px;;
+      margin-left: 7px;
+      margin-top: 0px;
+      color: #e9bf90;
+      font-family:Arial, Helvetica, sans-serif;
     }
     .sidenav 
     {
         width: 100%;
         z-index: 1;
-        background-color: rgb(128, 9, 74);
+        background-color: #332121;
         overflow-x: hidden;
         padding-top: 20px;
         margin-top: auto;
@@ -554,7 +625,7 @@
         padding: 6px 8px 6px 16px;
         text-decoration: none;
         font-size: 20px;
-        color: #818181;
+        color: #c99253;
         display: block;
         border: none;
         background: none;
@@ -562,13 +633,14 @@
         text-align: left;
         cursor: pointer;
         outline: none;
+        border-bottom: dotted #3d3232;
+        font-family:Arial, Helvetica, sans-serif;
     }
       
       /* On mouse-over */
       .sidenav a:hover, .dropdown-btn:hover {
-        color: #000000;
+        color: #e78009;
       }
-      
       /* Main content */
       .main {
         margin-left: 200px; /* Same as the width of the sidenav */
@@ -578,16 +650,16 @@
       
       /* Add an active class to the active dropdown button */
       .active {
-        background-color: rgb(231, 231, 243);
-        color: rgb(2, 2, 2);
+        background-color: #4d2626;
+        color: #e78009;
       }
       
       /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
       .dropdown-container {
         display: none;
-        background-color: #bed2df;
+        background-color: #201f1e;
         padding-left: 8px;
-        color: black;
+        color: #351f1f;
       }
       
       /* Optional: Style the caret down icon */
@@ -598,7 +670,7 @@
       }
       
       .arrow {
-        border: solid #0b0c0c;
+        border: solid #c99253;;
         border-width: 0 3px 3px 0;
         display: inline-block;
         padding: 3px;
@@ -608,10 +680,8 @@
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
       }
-
       #footer-nav{
         color: white;
-        
       }
   
       #footer-ul{
@@ -623,37 +693,36 @@
       #footer-li{
         display: inline-block;
         padding: 15px 30px;
+        border-left: solid #444341;
+        border-right: solid #444341;
       }
-  
       #footer-a{
         text-align: center;
-        color: white;
+        color: #c99253;
         text-decoration: none;
         font-size: 1.2vw;
+        font-family:Arial, Helvetica, sans-serif;
       }
-  
       #footer-a:hover{
-        color:rgb(139, 139, 107);
+        color:#e78009;
       }
-
       #h2-id{
         margin-top: 20px;
         margin-left: 11px;
       }
-
       input[type=text], select, textarea {
         width: 100%;
         padding: 12px;
-        border: 1px solid #ccc;
+        border: 1px solid #332121;;
         border-radius: 4px;
         box-sizing: border-box;
         margin-top: 6px;
         margin-bottom: 16px;
-        resize: vertical;
+        resize: none;
       }
       
       input[type=submit] {
-        background-color: #96a59f;
+        background-color: #332121;;
         color: white;
         padding: 12px 20px;
         border: none;
@@ -661,16 +730,17 @@
         cursor: pointer;
         width: 100%
       }
-      
+
       input[type=submit]:hover {
-        background-color: #45a049;
+        background-color: #f1850a;
       }
 
       .container{
-        margin-top: 20px;
-        background-color: rgb(201, 215, 216);
+          margin-top: 20px;
+          background-color: #daa56a;
+          color: #332121;
+          font-family:Arial, Helvetica, sans-serif;
       }
-
       table{
         margin: 80px;
       }
@@ -727,7 +797,7 @@
     }
     #content:after{content: ""; display: table; clear: both;} 
     #sidebar{
-        background-color: rgb(216, 208, 215);;  
+        background-color: #725f5f; 
         width:100%;
         height: 20%;
         overflow: scroll;
@@ -739,7 +809,7 @@
         overflow: scroll;
     }
     #discussion-forum{
-        background-color:rgb(194, 176, 241);
+        background-color:#725f5f;
         width: 100%;
         height: 15%
     }
@@ -757,20 +827,27 @@
     }
     #h1-id{
         color: #fabd77;
-        margin: 0px;
+        margin-left: 10px;
+        padding-bottom: -43px;
+        margin-bottom: 3px;
+        margin-top: 0px;
+        font-family:Arial, Helvetica, sans-serif;
     }
     #side-id, #disc-id{
-        margin-left: 7px;
-        margin-top: 0px;
+      margin-left: 7px;
+      margin-top: 0px;
+      color: #e9bf90;
+      font-family:Arial, Helvetica, sans-serif;
     }
     .sidenav 
     {
         width: 100%;
         z-index: 1;
-        background-color: rgb(128, 9, 74);
+        background-color: #332121;
         overflow-x: hidden;
         padding-top: 20px;
         margin-top: auto;
+
     }
       
       /* Style the sidenav links and the dropdown button */
@@ -779,7 +856,7 @@
         padding: 6px 8px 6px 16px;
         text-decoration: none;
         font-size: 20px;
-        color: #818181;
+        color: #c99253;
         display: block;
         border: none;
         background: none;
@@ -787,11 +864,13 @@
         text-align: left;
         cursor: pointer;
         outline: none;
+        border-bottom: dotted #3d3232;
+        font-family:Arial, Helvetica, sans-serif;
     }
       
       /* On mouse-over */
       .sidenav a:hover, .dropdown-btn:hover {
-        color: #000000;
+        color: #e78009;
       }
       
       /* Main content */
@@ -803,16 +882,16 @@
       
       /* Add an active class to the active dropdown button */
       .active {
-        background-color: rgb(231, 231, 243);
-        color: rgb(2, 2, 2);
+        background-color: #4d2626;
+        color: #e78009;
       }
       
       /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
       .dropdown-container {
         display: none;
-        background-color: #bed2df;
+        background-color: #201f1e;
         padding-left: 8px;
-        color: black;
+        color: #351f1f;
       }
       
       /* Optional: Style the caret down icon */
@@ -823,7 +902,7 @@
       }
       
       .arrow {
-        border: solid #0b0c0c;
+        border: solid  #c99253;
         border-width: 0 3px 3px 0;
         display: inline-block;
         padding: 3px;
@@ -839,7 +918,6 @@
       }
       #footer-nav{
         color: white;
-        
       }
   
       #footer-ul{
@@ -851,24 +929,26 @@
       #footer-li{
         display: inline-block;
         padding: 15px 30px;
+        border-left: solid #444341;
+        border-right: solid #444341;
       }
   
       #footer-a{
         text-align: center;
-        color: white;
+        color: #c99253;
         text-decoration: none;
-        font-size: 1.2vw;
+        font-size: 1vw;
+        font-family:Arial, Helvetica, sans-serif;
       }
   
       #footer-a:hover{
-        color:rgb(139, 139, 107);
+        color:#e78009;
       }
-
       input[type=text], select, textarea {
         width: 100%;
         height: 23px;
         padding: 12px;
-        border: 1px solid #ccc;
+        border: 1px solid #332121;;
         border-radius: 4px;
         box-sizing: border-box;
         margin-top: 6px;
@@ -877,7 +957,7 @@
       }
       
       input[type=submit] {
-        background-color: #96a59f;
+        background-color: #332121;;
         color: white;
         padding: 12px 20px;
         border: none;
@@ -885,13 +965,16 @@
         cursor: pointer;
         width: 100%
       }
-      
+
       input[type=submit]:hover {
-        background-color: #45a049;
+        background-color: #f1850a;
       }
+
       .container{
-        margin-top: 20px;
-        background-color: rgb(201, 215, 216);
+          margin-top: 20px;
+          background-color: #daa56a;
+          color: #332121;
+          font-family:Arial, Helvetica, sans-serif;
       }
       table{
         margin: 0px;
