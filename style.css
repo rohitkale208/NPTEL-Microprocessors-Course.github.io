@@ -261,6 +261,10 @@
         padding: 10px;
       }
       
+      #col5
+      {
+        padding-bottom: 20px;
+      }
 
       @media screen and (max-height: 450px) {
         .sidenav {padding-top: 15px;}
@@ -528,6 +532,11 @@
         padding: 10px;
       }
 
+      #col5
+      {
+        padding-bottom: 20px;
+      }
+
       @media screen and (max-height: 450px) {
         .sidenav {padding-top: 15px;}
         .sidenav a {font-size: 18px;}
@@ -763,6 +772,12 @@
       th, td{
         padding: 10px;
       }
+
+      #col5
+      {
+        padding-bottom: 20px;
+      }
+
       @media screen and (max-height: 450px) {
         .sidenav {padding-top: 15px;}
         .sidenav a {font-size: 18px;}
@@ -998,6 +1013,12 @@
       th, td{
         padding: 5px;
       }
+
+      #col5
+      {
+        padding-bottom: 20px;
+      }
+
       @media screen and (max-height: 450px) {
         .sidenav {padding-top: 15px;}
         .sidenav a {font-size: 18px;}
