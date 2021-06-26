@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NPTEL-Workshop</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,800,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<style>
+@media(min-width:1200px)
+{
+    .content 
+    {
+    width: 100%;
+    float: left;
+    text-align: left;
+    background-image: url(../slices/WelcomeMessage.jpg);
+    font-family: Helvetica, Geneva, sans-serif;
+    padding: 72px;
+    }
+    .content_heading 
+    {
+    background-color: rgb(216, 208, 215);
+    float: left;
+    height: 60px;
+    width: 100%;
+    color: #e78009;
+    font-family: Helvetica, Geneva, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    }
+    
+    .portrait_info 
+    {
+    background-color: rgb(216, 208, 215);
+    float: left;
+    height: 195px;
+    width: 100%;
+    }  
+    .portrait
+    {
+    width: 125px;
+    height: 150px;
+    background-color: rgb(216, 208, 215);
+    float: left;
+    }
+    .info 
+    {
+    width: 508px;
+    height: 110px;
+    background-color: rgb(216, 208, 215);
+    padding-left: 40px;
+    padding-top: 64px;
+    float: left;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: left;
+    color: #666666;
+    }
+}
+@media(min-width:992px) and (max-width:1199px)
+{
+    .content 
+    {
+    width: 100%;
+    float: left;
+    text-align: left;
+    background-image: url(../slices/WelcomeMessage.jpg);
+    font-family: Helvetica, Geneva, sans-serif;
+    padding: 72px;
+    }
+    .content_heading 
+    {
+    background-color: rgb(216, 208, 215);
+    float: left;
+    height: 38px;
+    width: 100%;
+    color: #e78009;
+    font-family: Helvetica, Geneva, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    }
+    
+    .portrait_info 
+    {
+    background-color: rgb(216, 208, 215);
+    float: left;
+    height: 195px;
+    width: 100%;
+    }  
+    .portrait
+    {
+    width: 125px;
+    height: 150px;
+    background-color: rgb(216, 208, 215);
+    float: left;
+    }
+    .info 
+    {
+    width: 508px;
+    height: 110px;
+    background-color: rgb(216, 208, 215);
+    padding-left: 164px;
+    padding-top: 64px;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: left;
+    color: #666666;
+    }
+}
+@media(min-width:768px) and (max-width:991px) 
+{
+    .content 
+    {
+    width: 100%;
+    float: left;
+    text-align: left;
+    background-image: url(../slices/WelcomeMessage.jpg);
+    font-family: Helvetica, Geneva, sans-serif;
+    padding: 72px;
+    }
+    .content_heading 
+    {
+    background-color: rgb(216, 208, 215);
+    float: left;
+    height: 60px;
+    width: 100%;
+    color: #e78009;
+    font-family: Helvetica, Geneva, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    }
+    
+    .portrait_info 
+    {
+    background-color: rgb(216, 208, 215);
+    float: left;
+    height: 195px;
+    width: 100%;
+    }  
+    .portrait
+    {
+    width: 125px;
+    height: 150px;
+    background-color: rgb(216, 208, 215);
+    float: left;
+    }
+    .info 
+    {
+    width: 508px;
+    height: 110px;
+    background-color: rgb(216, 208, 215);
+    padding-left: 40px;
+    padding-top: 64px;
+    float: left;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: left;
+    color: #666666;
+    }
+}
+@media(max-width:767px)
+{
+    .content 
+    {
+    width: 100%;
+    float: left;
+    text-align: left;
+    background-image: url(../slices/WelcomeMessage.jpg);
+    font-family: Helvetica, Geneva, sans-serif;
+    padding: 72px;
+    }
+    .content_heading 
+    {
+    background-color: rgb(216, 208, 215);
+    float: left;
+    height: 60px;
+    width: 100%;
+    color: #e78009;
+    font-family: Helvetica, Geneva, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    }
+    
+    .portrait_info 
+    {
+    background-color: rgb(216, 208, 215);
+    float: left;
+    height: 195px;
+    width: 100%;
+    }  
+    .portrait
+    {
+    width: 125px;
+    height: 150px;
+    background-color: rgb(216, 208, 215);
+    float: left;
+    }
+    .info 
+    {
+    width: 508px;
+    height: 110px;
+    background-color: rgb(216, 208, 215);
+    padding-left: 175px;
+    padding-top: 64px;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: left;
+    color: #666666;
+    }
+}    
+</style>
+<body>
+   <div id="wrapper">
+     <div id="header">
+       <div id="wel-logo">
+         <img src="wel_.png" alt="wel_logo" id="wel">
+       </div>
+       <div id="heading">
+         <div class ="head1">
+             <h1 id="h1-id">WEL Summer school 2021</h1>
+             <h1 id="h1-id">Microcontroller Lab based on Pt-51</h2>
+         </div clas>
+        
+         
+       </div>
+       <div id="nptel-logo">
+         <img src="nptel_logo.png" alt="nptel" id="nptel">
+       </div>
+     </div>
+     
+     <div id="content">
+       <div id="sidebar">
+         <h2 id="side-id">Course contents:</h2>
+         <div class="sidenav">
+          <button class="dropdown-btn">Course overview
+            <i class="arrow down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="index.html">Schedule</a>
+            <a href="instructors.html">Instructors</a>
+          </div>
+          
+          <button class="dropdown-btn">Lab handouts
+            <i class = "arrow down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="lab1.html">Day1</a>
+          </div>
+    
+          <button class="dropdown-btn">Development tools
+            <i class = "arrow down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="tools.html">Keil u-Vision IDE Installation and use</a>
+            <a href="flip.html">Flip</a>
+          </div>
+    
+          <button class="dropdown-btn">PT-51 board resources
+            <i class = "arrow down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="manual.html">User manual</a>
+            
+            <button class="dropdown-btn">Programming and Testing 
+              <i class = "arrow down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="hex.html">Running HEX file on PT-51</a>
+              <a href="testing.html">Testing of peripherals on PT-51</a>
+            </div>
+            
+            <a href="datasheet.html">AT89C5131A datasheet</a>
+            <a href="intrsuctions.html">8051 Instructions set</a>
+    
+          </div>
+    
+          <button class="dropdown-btn">Lecture notes
+            <i class = "arrow down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="intotomico.html">Introduction to Microcontrollers</a>
+            <a href="arch_8051.html">8051 Architecture</a>
+            <a href="assembly.html">Introduction to Assembly Programming</a>
+            <a href="interrupts.html">8051 Interrupts</a>
+            <a href="timers.html">8051 Timers</a>
+            <a href="serialIO.html">8051 Serial IO</a>
+            <a href="intelHex.html">Intel HEX format</a>
+            <a href="spi.html">Serial Peripheral Interface</a>
+          </div>
+
+          <button class="dropdown-btn">Video lectures
+            <i class = "arrow down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="https://drive.google.com/file/d/1yhtx93TkVmxFsM7gctOLcJadSBFhGGwI/view?usp=sharing">8051 Architecture part-1</a>
+            <a href="https://drive.google.com/file/d/1F80oNBLrrp2y3fZav9cMEBgGxSUnmKiU/view?usp=sharing">8051 Architecture part-2</a>
+            <a href="https://drive.google.com/file/d/1yL4PhoBN2CttXC4ycJQZVFysw0eaJmDJ/view?usp=sharing">Addressing Modes part-1</a>
+            <a href="https://drive.google.com/file/d/1Zl3WT82I94hlX73ulSHrNE1if9HGHN7B/view?usp=sharing">Addressing Modes part-2</a>
+            <a href="https://drive.google.com/file/d/1ycERf2B0hfenD5lrJY3N3PSWqpxrc9oX/view?usp=sharing">Data Movement Instructions</a>
+            <a href="https://drive.google.com/file/d/1CscgkxYFyz6Pc4cMcG_VFkxFA6RMT6wW/view?usp=sharing">Arithmetic and Logical Instructions</a>
+            <a href="https://drive.google.com/file/d/1RZx89MnRIJ0B-CmtZCBSb1aGI20rG2BZ/view?usp=sharing">Jump and Call Instructions</a>
+          </div>
+
+          <a class="dropdown-btn" href="faq.html" style="font-family:Arial, Helvetica, sans-serif;">FAQ</a>
+          
+        </div>
+       </div>
+       <div id="discussion-forum">
+          <h2 id="disc-id">Discussion forum</h2>
+          <div class="container">
+            <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScH0B3t3ziH2RncQGAOtNVv_ZNMiNPrm0dMUP8olDmtW3HKoA/formResponse">
+              <label for="fname" style="font-size: larger;">Name</label>
+              <input type="text" id="fname" name="entry.1652619687" placeholder="Your name.." required="" >
+          
+              <label for="subject" style="font-size: larger;">Ask your query here:</label>
+              <textarea id="subject" name="entry.1950652696" placeholder="Please refer to the material provided before submitting." style="height:200px" required=""></textarea>
+           
+              <input type="submit" value="Submit">
+            </form>
+      
+          </div>
+          
+       </div>
+       <div id="middle-content">
+         
+        <div class="content">
+
+
+            <div class="content_heading">
+            Course Instructor:
+            </div>
+        
+            <div class="portrait_info">
+            <div class="portrait"><img src="images/prof_dks.png" width="125" height="150" alt="Prof. Dinesh Sharma"></div>
+            <div class="info">
+            <p>
+            </p><div style="font-weight:bold;">Prof. Dinesh Sharma</div>
+            <br>
+            <p></p>
+            </div><!--info ends -->
+            </div><!--portrait_info ends -->
+            
+            <div class="content_heading">
+            Course coordinator:
+            </div>
+    
+            <div class="portrait_info">
+            <div class="portrait"><img src="images/prof_tallur.jpg" width="125" height="150" alt="Prof. Siddharth Tallur"></div>
+            <div class="info">
+            <p>
+            </p><div style="font-weight:bold;">Prof. Siddharth Tallur</div>
+            <br>
+            <p></p>
+            </div><!--info ends -->
+            </div><!--portrait_info ends -->
+            
+            <div class="content_heading">
+            Teaching Assistants:
+            </div>
+    
+            <div class="portrait_info">
+            <div class="portrait"><img src="images/arjun.jpg" width="125" height="150" alt="Arjun Raj"></div>
+            <div class="info">
+            <p>
+            </p><div style="font-weight:bold;">Arjun Raj</div>
+            <br>
+            <p></p>
+            </div><!--info ends -->
+            </div><!--portrait_info ends -->
+            
+            
+            <div class="portrait_info">
+            <div class="portrait"><img src="images/nikhil.jpeg" width="125" height="150" alt="Nikhil Ajith"></div>
+            <div class="info">
+            <p>
+            </p><div style="font-weight:bold;">Nikhil Ajith</div>
+            <br>
+            <p></p>
+            </div><!--info ends -->
+            </div><!--portrait_info ends -->
+           
+            
+            <div class="portrait_info">
+            <div class="portrait"><img src="images/dinesh.jpg" width="125" height="150" alt="Gajulapalli Venkata Naga Dinesh Kumar"></div>
+            <div class="info">
+            <p>
+            </p><div style="font-weight:bold;">Gajulapalli Venkata Naga Dinesh Kumar</div>
+            <br>
+            <p></p>
+            </div><!--info ends -->
+            </div><!--portrait_info ends -->
+            
+            <div class="portrait_info">
+            <div class="portrait"><img src="images/vikash.jpg" width="125" height="150" alt="Vikash Kumar"></div>
+            <div class="info">
+            <p>
+            </p><div style="font-weight:bold;">Vikash Kumar</div>
+            <p></p>
+            </div><!--info ends -->
+            </div><!--portrait_info ends -->
+            
+            
+            <div class="portrait_info">
+            <div class="portrait"><img src="images/rohit.jpg" width="125" height="150" alt="Rohit Madhukar Kale"></div>
+            <div class="info">
+            <p>
+            </p><div style="font-weight:bold;">Rohit Madhukar Kale
+            </div>
+            <p></p>
+            </div><!--info ends -->
+            </div><!--portrait_info ends -->
+        </div>
+
+       </div>
+     </div>
+
+     <div id="footer">
+      <nav id="footer-nav">
+        <ul id="footer-ul">
+          <li id="footer-li"><a href="https://www.ee.iitb.ac.in/web" id="footer-a">EE Department</a></li>
+          <li id="footer-li"><a href="https://www.ee.iitb.ac.in/~wel_iitb/" id="footer-a">About WEL</a></li>
+          <li id="footer-li"><a href="docs/Brochure_nptel_FPGA_Microcontroller.pdf" id="footer-a">Brochure</a></li>
+          
+        </ul>
+      </nav>
+     </div>
+
+   </div>
+   <script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      } else {
+      dropdownContent.style.display = "block";
+      }
+      });
+      
+    }
+    </script>
+</body>
+
+</html>
