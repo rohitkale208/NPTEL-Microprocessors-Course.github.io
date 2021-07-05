@@ -47,6 +47,8 @@ readNibble :
 				; To configure port as Output clear it
 				; To configure port as input, set it.
 				; Logic to read a 4 bit nibble and get confirmation from user
+	PUSH AR0 		;pushing the registers which are going to be
+	PUSH AR1 		;used by this subroutine
 	loop:
 				;turn on all 4 leds which tells routine is ready to accept input
 		mov p1, #0ffh
@@ -74,6 +76,8 @@ readNibble :
 		mov a, p1
 		cjne a, #0fh, loop
 	mov 4eh, r0 		;moving the previously read nibble to lower bits of 4EH
+	POP AR1		;popping the register in the exact reverse order before
+	POP AR0 		;exiting from the subroutine
 	ret
 
 packNibble:
@@ -86,8 +90,8 @@ packNibble:
 	lcall readnibble 	;call readNibble to read the 4 bits and store it in lower 4 bits of 4EH
 	mov a, 4eh 		;move the read value from 4EH to ACC
 	anl a, #0fh 		;ensuring that the value in the ACC has higher 4 bits as zeroes
-	orl 0, a 		;R0 = R0|ACC, since R0 had upper 4 bits only and ACC had lower 4 bits
-	mov 4fh, r0 		;finally moving the whole byte read from R0 to 4FH
+	orl a,r0		;R0 = R0|ACC, since R0 had upper 4 bits only and ACC had lower 4 bits
+	mov 4fh, a 		;finally moving the whole byte read from R0 to 4FH
 	pop ar0 		;popping the registers before returning
 	ret
 
